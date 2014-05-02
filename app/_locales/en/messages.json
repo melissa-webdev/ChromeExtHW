@@ -1,10 +1,10 @@
 {
   "appName": {
-    "message": "AwesomeExtension",
+    "message": "redditHomebrewing",
     "description": "The name of the application"
   },
   "appDescription": {
-    "message": "chromeExtHW",
+    "message": "awesomeHomebrewingStuff",
     "description": "The description of the application"
   }
 }

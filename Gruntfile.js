@@ -1,4 +1,4 @@
-// Generated on 2014-05-01 using generator-chrome-extension 0.2.7
+// Generated on 2014-05-02 using generator-chrome-extension 0.2.7
 'use strict';
 
 // # Globbing
@@ -280,7 +280,7 @@ module.exports = function (grunt) {
         compress: {
             dist: {
                 options: {
-                    archive: 'package/AwesomeExtension<%= config.manifest.version %>.zip'
+                    archive: 'package/redditHomebrewing<%= config.manifest.version %>.zip'
                 },
                 files: [{
                     expand: true,
