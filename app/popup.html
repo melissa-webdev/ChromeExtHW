@@ -17,11 +17,33 @@
         <!-- endbuild -->
 
         <script type="template/html" id="redditHomebrew">
-            <%_.each (data, function(item, index, list){
+            
+            <%_.each (data, function(element, index, list){ %>
 
-                div class=""
-            })    </head>
+                <div class="stuff">
+                    <ul>
+                        <li> <%= element. %></li>
+                        <li> <%= element. %></li>
+                        <li> <%= element. %></li>
+                    </ul>
+                </div>
+
+            <% }) %>
+
+        </script>
+
+
+
+
+    </head>
     <body>
-      <h1>Home Brewing on Reddit</h1>
+        <h1>Home Brewing on Reddit</h1>
+        <div class="brewData">
+
+
+            
+
+
+        </div>
     </body>
 </html>
