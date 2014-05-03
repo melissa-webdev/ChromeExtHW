@@ -1,3 +1,14 @@
-'use strict';
+$(document).ready(function(){
 
-console.log('\'Allo \'Allo! Option');
+	$.get("http://www.reddit.com/r/homebrewing.json", function(data){
+
+		var brewTemplate = $("#redditHomebrew").html();
+		var templateString = _.template(brewTemplate, data)
+		
+		
+		$(".brewData").html(TemplateString);
+
+		
+			
+	})
+})
