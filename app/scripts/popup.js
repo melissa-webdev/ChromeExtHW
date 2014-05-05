@@ -25,14 +25,9 @@ $(function(){
 				html += '<li><a href=\"'+url+'\" target=\"_blank\"><p>'+title+'</p></a></li>';
 			};
 
-		htmlOutput(html);
-
+		$(".brew").html(html);		
 });
 });
-	function htmlOutput(html) {
-    
-    $(".brew").html(html);
-}
 
 });
 
