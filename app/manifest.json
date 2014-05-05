@@ -4,8 +4,8 @@
     "manifest_version": 2,
     "description": "__MSG_appDescription__",
     "icons": {
-        "16": "images/beer.jpeg",
-        "128": "images/beer.jpeg"
+        "16": "images/beer.png",
+        "128": "images/beer.png"
     },
     "default_locale": "en",
     "background": {
@@ -16,8 +16,8 @@
     },
   "browser_action": {
     "default_icon": {
-      "19": "images/beer.jpeg",
-      "38": "images/beer.jpeg"
+      "19": "images/beer.png",
+      "38": "images/beer.png"
     },
     "default_title": "redditHomebrewing",
     "default_popup": "popup.html"
