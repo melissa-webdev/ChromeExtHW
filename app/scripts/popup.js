@@ -1,37 +1,39 @@
-// 'use strict';
+$(document).ready(function(){
 
-// console.log('\'Allo \'Allo! Popup');
-// $(document).ready(function(){
 
-// 	$.get("http://www.reddit.com/r/homebrewing.json", function(data){
+//-------- first reddit attempt fail
 
-// 		var brewTemplate = $("#redditHomebrew").html();
-// 		var templateString = _.template(brewTemplate, data);
-		
-		
-// 		$(".brewData").html(TemplateString);
+// $(function() {
+// 	$.getJSON("http://www.reddit.com/r/Homebrewing.json", function(data) {
+//       $.each(data.data.children, function (i,item) {
+//             $(".reddit").append("<li>" + item.data.children + "</li>");
+//         });
+//         });
 
-		
-			
-// })
-// });
+//     });
+// trying reddit again, based on speckyboy tutorial
 
-$(document).ready(function() {
+$(function(){
+	$.getJSON("http://www.reddit.com/r/Homebrewing.json", function(data){
+		var brewData = data.data.children;
+		var html = " ";
+			for(var i=0, b=brewData.length; i<b; i++){
+				var obj = brewData[i].data;
+				var title = obj.title;
+				var url = "http://www.reddit.com" + obj.permalink;
 
-var data = ["trying", "this", "before", "I", "try", "JSON" ];
+				html += '<div class=\"listingDetails\"><a href=\"'+url+'\" target=\"_blank\"><h5>'+title+'</h5></a>\n';
+			};
 
-var brewTemplate = function(data){
-	var markup = "";
-	var i;
-
-	for ( i = 0; i < data.length; i++) {
-		markup += "<li>" + data[i] + "</li>";
-		
-	}
-
-	return markup;
-};
-
-$(".brewData").append(brewTemplate(data));
+		htmlOutput(html);
 
 });
+});
+	function htmlOutput(html) {
+    
+    $(".brew").html(html);
+}
+
+});
+
+
