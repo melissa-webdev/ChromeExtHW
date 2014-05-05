@@ -2,6 +2,11 @@ body {
     padding: 10px;
     background-color: #A26147;
 }
+.titlediv{
+	background-color: #D27E35;
+	border-radius: 12px;
+	padding: 5px;
+}
 .title{
 	font-size: 18px;
 	font-weight: bolder;
