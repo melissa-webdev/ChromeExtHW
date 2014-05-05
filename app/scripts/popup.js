@@ -21,8 +21,8 @@ $(function(){
 				var obj = brewData[i].data;
 				var title = obj.title;
 				var url = "http://www.reddit.com" + obj.permalink;
-
-				html += '<div class=\"listingDetails\"><a href=\"'+url+'\" target=\"_blank\"><h5>'+title+'</h5></a>\n';
+				// html += '<li><a href\"' + url + '\" target=\"_blank\"><h2>' + title + '</h2></a>\n';	
+				html += '<li><a href=\"'+url+'\" target=\"_blank\"><p>'+title+'</p></a></li>';
 			};
 
 		htmlOutput(html);
